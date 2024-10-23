@@ -8,7 +8,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
-import {noStore} from 'next/navigation';
+
 
 export async function fetchRevenue() {
   try {
@@ -142,7 +142,6 @@ export async function fetchInvoicesPages(query: string) {
 }
 
 export async function fetchInvoiceById(id: string) {
-  noStore();
   try {
     const data = await sql<InvoiceForm>`
       SELECT
