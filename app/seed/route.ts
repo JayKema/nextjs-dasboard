@@ -117,12 +117,12 @@
 //   }
 // }
 
-export function Get() {
-  return Response.json(
-    {
-      message: `For seeding the development database`,
+// export function Get() {
+//   return Response.json(
+//     {
+//       message: `For seeding the development database`,
 
-    }
-  )
-};
+//     }
+//   )
+// };
  
