@@ -102,6 +102,7 @@ export async function deleteInvoice(id: string){
   } 
 }
 
+
 export async function authenticate(
   prevState: string | undefined,
   formData: FormData
@@ -111,7 +112,7 @@ export async function authenticate(
   } catch (error) {
     if (error instanceof AuthError) {
       switch (error.type){
-        case 'CredentialSignin':
+        case 'CredentialsSignin':
           return 'Invalid Credentials.';
         default:
           return 'Something went wrong.'
