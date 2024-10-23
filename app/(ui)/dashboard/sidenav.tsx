@@ -21,7 +21,7 @@ export default function SideNav() {
         <form 
           action={async () =>{
             'use server';
-            await signOut({ redirect: true, callbackUrl: 'http://localhost:3000/login' });
+            await signOut({ redirectTo: "/login", redirect: true });
           }
 
           }
